@@ -4,8 +4,8 @@
 	- [Attributes](#attributes)
 	- [Input Needs](#input-needs)
 		- [Future Requirements](#future-requirements)
-	- [Ability Score Priorities](#ability-score-priorities)
-		- [Class](#class)
+	- [`Ability` Score Priorities](#ability-score-priorities)
+		- [`Class`](#class)
 			1. [Assassin](#assassin)
 			2. [Barbarian](#barbarian)
 			3. [Bard](#bard)
@@ -20,8 +20,8 @@
 			12. [Thief](#thief)
 			13. [Warlock](#warlock)
 			14. [Wizard](#wizard)
-	- [Ability Score Bonuses](#ability-score-bonuses)
-		- [Race](#race)
+	- [`Ability` Score Bonuses](#ability-score-bonuses)
+		- [`Race`](#race)
 			1. [Human](#human)
 			2. [Elf](#elf)
 			3. [Dwarf](#dwarf)
@@ -102,7 +102,7 @@ Enable a manual `Bonus` field for adding in a desired bonus.
 3. Third
 4. All other roll results are assigned randomly to the remaining `Attribute`s.
 
-#### Class
+#### `Class`
 
 ##### Assassin
 
@@ -189,9 +189,9 @@ Enable a manual `Bonus` field for adding in a desired bonus.
 3. `Constitution`
 
 
-### Ability Score Bonuses
+### `Ability` Score Bonuses
 
-#### Race
+#### `Race`
 
 ##### Human
 
