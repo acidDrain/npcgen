@@ -63,7 +63,7 @@ Automatically calculate and add a bonus to the rolls based on
 - `Background`
 - `Culture`
 
-Enable a manual `Bonus` field for adding in a desired bonus
+Enable a manual `Bonus` field for adding in a desired bonus.
 
 - The bonus will be applied to all rolls.
 - The bonus adds to any `Racial`, `Background`, or `Culture` bonuses.
