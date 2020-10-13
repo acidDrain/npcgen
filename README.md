@@ -1,11 +1,11 @@
 # NPC Generator
 
-1. [Requirements](#requirements)
-	1. [Attributes](#attributes)
-	2. [Input Needs](#input-needs)
-		1. [Future Requirements](#future-requirements)
-	3. [Ability Score Priorities](#ability-score-priorities)
-		1. [Class](#class)
+- [Requirements](#requirements)
+	- [Attributes](#attributes)
+	- [Input Needs](#input-needs)
+		- [Future Requirements](#future-requirements)
+	- [Ability Score Priorities](#ability-score-priorities)
+		- [Class](#class)
 			1. [Assassin](#assassin)
 			2. [Barbarian](#barbarian)
 			3. [Bard](#bard)
@@ -20,10 +20,10 @@
 			12. [Thief](#thief)
 			13. [Warlock](#warlock)
 			14. [Wizard](#wizard)
-		2. [Race Ability Score Bonuses](#race-ability-score-bonuses)
-4. [Getting Started](#getting-started)
-	1. [Build](#build)
-	2. [Build + Watch](#build--watch)
+		- [Race Ability Score Bonuses](#race-ability-score-bonuses)
+- [Getting Started](#getting-started)
+	- [Build](#build)
+	- [Build + Watch](#build--watch)
 
 # NPC Gen
 
