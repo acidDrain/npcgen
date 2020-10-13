@@ -1,26 +1,11 @@
-# Basic Reason Template
+# NPC Generator
 
-Hello! This project allows you to quickly get started with Reason and BuckleScript. If you wanted a more sophisticated version, try the `react` template (`bsb -theme react -init .`).
-
-# Build
-
-```bash
-# for yarn
-yarn build
-
-# for npm
-npm run build
-```
-
-# Build + Watch
-
-```bash
-# for yarn
-yarn start
-
-# for npm
-npm run start
-```
+1. [Requirements](#requirements)
+2. [Attributes](#attributes)
+3. [Input Needs](#input-needs)
+4. [Class](#class)
+5. [Race Ability Score Bonuses](#race-ability-score-bonuses)
+6. [Getting Started](#getting-started)
 
 # NPC Gen
 
@@ -39,13 +24,13 @@ Melee, Ranged, Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma
 
 ## Input Needs
 
-Allow priority to be chosen. Selecting a Class clears then selects based on class but can be edited after class is selected. Race may give a bonus to an ability score. 
+Allow priority to be chosen. Selecting a Class clears then selects based on class but can be edited after class is selected. Race may give a bonus to an ability score.
 
-*Not Needed Atm but may need in future* Race, Background and/or Culture will set a bonus which automatically adds to the roll. 
+*Not Needed Atm but may need in future* Race, Background and/or Culture will set a bonus which automatically adds to the roll.
 
 A manual Bonus Field for adding in a desired bonus which is applied to all rolls and stacks with possible Racial, Background and Culture bonuses.
 
-## Class 
+## Class
 
 - **Ability** Score Priority (First, Second, Third). Rest Randomized.
 - **Assassin**: Dexterity, Melee, Charisma
@@ -79,4 +64,27 @@ A manual Bonus Field for adding in a desired bonus which is applied to all rolls
 - Background Ability Score Bonuses: None atm
 - Culture Ability Score Bonuses: None atm
 
+## Getting Started
+
+Hello! This project allows you to quickly get started with Reason and BuckleScript. If you wanted a more sophisticated version, try the `react` template (`bsb -theme react -init .`).
+
+# Build
+
+```bash
+# for yarn
+yarn build
+
+# for npm
+npm run build
+```
+
+# Build + Watch
+
+```bash
+# for yarn
+yarn start
+
+# for npm
+npm run start
+```
 
