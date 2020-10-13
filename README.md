@@ -1,51 +1,51 @@
 # NPC Generator
 
 - [Requirements](#requirements)
-	- [Attributes](#attributes)
-	- [Input Needs](#input-needs)
-		- [Future Requirements](#future-requirements)
-	- [`Ability` Score Priorities](#ability-score-priorities)
-		- [`Class`](#class)
-			1. [Assassin](#assassin)
-			2. [Barbarian](#barbarian)
-			3. [Bard](#bard)
-			4. [Cleric](#cleric)
-			5. [Druid](#druid)
-			6. [Fighter](#fighter)
-			7. [Monk](#monk)
-			8. [Paladin](#paladin)
-			9. [Ranger](#ranger)
-			10. [Shaman](#shaman)
-			11. [Sorcerer](#sorcerer)
-			12. [Thief](#thief)
-			13. [Warlock](#warlock)
-			14. [Wizard](#wizard)
-	- [`Ability` Score Bonuses](#ability-score-bonuses)
-		- [`Race`](#race)
-			1. [Human](#human)
-			2. [Elf](#elf)
-			3. [Dwarf](#dwarf)
-			4. [Gnome](#gnome)
-			5. [Halfling](#halfling)
-			6. [Orc](#orc)
-			7. [Goblin](#goblin)
-			8. [Minotaur](#minotaur)
-			9. [Satyr](#satyr)
-			10. [Firbolg](#firbolg)
-			11. [Miscellaneous](#miscellaneous)
+  - [Attributes](#attributes)
+  - [Input Needs](#input-needs)
+    - [Future Requirements](#future-requirements)
+  - [`Ability` Score Priorities](#ability-score-priorities)
+    - [`Class`](#class)
+      1. [Assassin](#assassin)
+      2. [Barbarian](#barbarian)
+      3. [Bard](#bard)
+      4. [Cleric](#cleric)
+      5. [Druid](#druid)
+      6. [Fighter](#fighter)
+      7. [Monk](#monk)
+      8. [Paladin](#paladin)
+      9. [Ranger](#ranger)
+      10. [Shaman](#shaman)
+      11. [Sorcerer](#sorcerer)
+      12. [Thief](#thief)
+      13. [Warlock](#warlock)
+      14. [Wizard](#wizard)
+  - [`Ability` Score Bonuses](#ability-score-bonuses)
+    - [`Race`](#race)
+      1. [Human](#human)
+      2. [Elf](#elf)
+      3. [Dwarf](#dwarf)
+      4. [Gnome](#gnome)
+      5. [Halfling](#halfling)
+      6. [Orc](#orc)
+      7. [Goblin](#goblin)
+      8. [Minotaur](#minotaur)
+      9. [Satyr](#satyr)
+      10. [Firbolg](#firbolg)
+      11. [Miscellaneous](#miscellaneous)
 - [Getting Started](#getting-started)
-	- [Build](#build)
-	- [Build + Watch](#build--watch)
+  - [Build](#build)
+  - [Build + Watch](#build--watch)
 
 # NPC Gen
 
-Generate `NPC` characters with optimal attributes based on `Class`
-(and `Race`?).
+Generate `NPC` characters with optimal attributes based on `Class` (and
+`Race`?).
 
 ## Requirements
 
-Emulate rolling (4) six-sided die by generating 10 random numbers
-(between 4 and 24)
+Emulate rolling (4) six-sided die by generating 10 random numbers (between 4
+and 24).
 
 Next,
 
@@ -54,9 +54,9 @@ Next,
   or custom user configuration, with highest scores assigned to lower priority
   (e.g. scores: 24, 11 -> Priority 1 = 24, Priority 2 = 11)
 - Since there are (9) `Attributes` to assign, if there are less than (9)
-  `Attributes` configured with a priority, after assigning highest scores
-  based on priorities, randomly assign the remaining scores to `Attributes`
-  missing a configured priority
+  `Attributes` configured with a priority, after assigning highest scores based
+  on priorities, randomly assign the remaining scores to `Attributes` missing a
+  configured priority
 - support `undefined` `Class`, `Race`. Some `NPC`s have no `Class` or `Race`
 
 ### Attributes
@@ -73,12 +73,12 @@ Next,
 
 ### Input Needs
 
-Allow the user to rank the priority of the `Attributes`.
-When a user selects a `Class`, the current `Attribute` assignments should
-clear/reset. The `Attribute`s should update to reflect the new
-`Class` configuration priorities.
-The user should be able to edit the `Class` `Attribute` priorities
-after a `Class` is selected.
+Allow the user to rank the priority of the `Attributes`.  When a user selects a
+`Class`, the current `Attribute` assignments should clear/reset. The
+`Attribute`s should update to reflect the new `Class` priority configuration.
+
+The `Class` `Attribute` priorities should be user modifiable after selecting a
+`Class`.
 
 The user chosen `Race` should support adding a bonus to `Ability` score(s).
 
@@ -244,21 +244,13 @@ This project uses `ReasonML` and `BuckleScript`.
 
 ### Build
 
-```bash
-# for yarn
-yarn build
+```bash # for yarn yarn build
 
-# for npm
-npm run build
-```
+# for npm npm run build ```
 
 ### Build + Watch
 
-```bash
-# for yarn
-yarn start
+```bash # for yarn yarn start
 
-# for npm
-npm run start
-```
+# for npm npm run start ```
 
