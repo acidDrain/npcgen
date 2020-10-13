@@ -4,9 +4,24 @@
 	1. [Attributes](#attributes)
 	2. [Input Needs](#input-needs)
 		1. [Future Requirements](#future-requirements)
-	3. [Class](#class)
-	4. [Race Ability Score Bonuses](#race-ability-score-bonuses)
-2. [Getting Started](#getting-started)
+	3. [Ability Score Priorities](#ability-score-priorities)
+		1. [Class](#class)
+			1. [Assassin](#assassin)
+			2. [Barbarian](#barbarian)
+			3. [Bard](#bard)
+			4. [Cleric](#cleric)
+			5. [Druid](#druid)
+			6. [Fighter](#fighter)
+			7. [Monk](#monk)
+			8. [Paladin](#paladin)
+			9. [Ranger](#ranger)
+			10. [Shaman](#shaman)
+			11. [Sorcerer](#sorcerer)
+			12. [Thief](#thief)
+			13. [Warlock](#warlock)
+			14. [Wizard](#wizard)
+		2. [Race Ability Score Bonuses](#race-ability-score-bonuses)
+4. [Getting Started](#getting-started)
 	1. [Build](#build)
 	2. [Build + Watch](#build--watch)
 
@@ -77,62 +92,90 @@ Enable a manual `Bonus` field for adding in a desired bonus.
 
 #### Class
 
-- **Assassin**:
-  1. `Dexterity`
-  2. `Melee`
-  3. `Charisma`
-- **Barbarian**:
-  1. `Strength`
-  2. `Constitution`
-  3. `Wisdom`
-- **Bard**:
-  1. `Charisma`
-  2. `Dexterity`
-  3. `Intelligence`
-- **Cleric**:
-  1. `Wisdom`
-  2. `Constitution`
-  3. `Strength`
-- **Druid**:
-  1. `Wisdom`
-  2. `Constitution`
-  3. `Charisma`
-- **Fighter**:
-  1. `Melee`
-  2. `Strength`
-  3. `Constitution`
-- **Monk**:
-  1. `Dexterity`
-  2. `Wisdom`
-  3. `Melee`
-- **Paladin**:
-  1. `Strength`
-  2. `Charisma`
-  3. `Melee`
-- **Ranger**:
-  1. `Ranged`
-  2. `Dexterity`
-  3. `Wisdom`
-- **Shaman**:
-  1. `Wisdom`
-  2. `Intelligence`
-  3. `Melee`
-- **Sorcerer**:
-  1. `Charisma`
-  2. `Constitution`
-  3. `Ranged`
-- **Thief**:
-  1. `Dexterity`
-  2. `Intelligence`
-  3. `Charisma`
-- **Warlock**:
-  1. `Charisma`
-  2. `Wisdom`
-  3. `Constitution`
-- **Wizard**:
-  1. `Intelligence`
-  2. `Wisdom`
-  3. `Constitution`
+##### Assassin
+
+1. `Dexterity`
+2. `Melee`
+3. `Charisma`
+
+##### Barbarian
+
+1. `Strength`
+2. `Constitution`
+3. `Wisdom`
+
+##### Bard
+
+1. `Charisma`
+2. `Dexterity`
+3. `Intelligence`
+
+##### Cleric
+
+1. `Wisdom`
+2. `Constitution`
+3. `Strength`
+
+##### Druid
+
+1. `Wisdom`
+2. `Constitution`
+3. `Charisma`
+
+##### Fighter
+
+1. `Melee`
+2. `Strength`
+3. `Constitution`
+
+##### Monk
+
+1. `Dexterity`
+2. `Wisdom`
+3. `Melee`
+
+##### Paladin
+
+1. `Strength`
+2. `Charisma`
+3. `Melee`
+
+##### Ranger
+
+1. `Ranged`
+2. `Dexterity`
+3. `Wisdom`
+
+##### Shaman
+
+1. `Wisdom`
+2. `Intelligence`
+3. `Melee`
+
+##### Sorcerer
+
+1. `Charisma`
+2. `Constitution`
+3. `Ranged`
+
+##### Thief
+
+1. `Dexterity`
+2. `Intelligence`
+3. `Charisma`
+
+##### Warlock
+
+1. `Charisma`
+2. `Wisdom`
+3. `Constitution`
+
+##### Wizard
+
+1. `Intelligence`
+2. `Wisdom`
+3. `Constitution`
+
 
 #### Race Ability Score Bonuses
 
