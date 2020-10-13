@@ -20,7 +20,19 @@
 			12. [Thief](#thief)
 			13. [Warlock](#warlock)
 			14. [Wizard](#wizard)
-		- [Race Ability Score Bonuses](#race-ability-score-bonuses)
+	- [Ability Score Bonuses](#ability-score-bonuses)
+		- [Race](#race)
+			1. [Human](#human)
+			2. [Elf](#elf)
+			3. [Dwarf](#dwarf)
+			4. [Gnome](#gnome)
+			5. [Halfling](#halfling)
+			6. [Orc](#orc)
+			7. [Goblin](#goblin)
+			8. [Minotaur](#minotaur)
+			9. [Satyr](#satyr)
+			10. [Firbolg](#firbolg)
+			11. [Miscellaneous](#miscellaneous)
 - [Getting Started](#getting-started)
 	- [Build](#build)
 	- [Build + Watch](#build--watch)
@@ -177,19 +189,51 @@ Enable a manual `Bonus` field for adding in a desired bonus.
 3. `Constitution`
 
 
-#### Race Ability Score Bonuses
+### Ability Score Bonuses
 
-- **Human**: +1 All `Ability` scores
-- **Elf**: +2 `Dexterity`
-- **Dwarf**: +2 `Constitution`
-- **Gnome**: +2 `Intelligence`
-- **Halfling**: +2 `Luck`
-- **Orc**: +2 `Strength`
-- **Goblin**: +2 `Dexterity`
-- **Minotaur**: +2 `Strength`
-- **Satyr**: +2 `Charisma`
-- **Firbolg**: +2 `Wisdom`
+#### Race
 
+##### Human
+
++1 All `Ability` scores
+
+##### Elf
+
++2 `Dexterity`
+
+##### Dwarf
+
++2 `Constitution`
+
+##### Gnome
+
++2 `Intelligence`
+
+##### Halfling
+
++2 `Luck`
+
+##### Orc
+
++2 `Strength`
+
+##### Goblin
+
++2 `Dexterity`
+
+##### Minotaur
+
++2 `Strength`
+
+##### Satyr
+
++2 `Charisma`
+
+##### Firbolg
+
++2 `Wisdom`
+
+##### Miscellaneous
 
 - `Background` `Ability` Score Bonuses: None (yet)
 - `Culture` `Ability` Score Bonuses: None (yet)
