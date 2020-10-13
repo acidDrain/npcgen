@@ -4,7 +4,7 @@
   - [Attributes](#attributes)
   - [Input Needs](#input-needs)
     - [Future Requirements](#future-requirements)
-  - [`Ability` Score Priorities](#ability-score-priorities)
+  - [`Attribute` Score Priorities](#attribute-score-priorities)
     - [`Class`](#class)
       1. [Assassin](#assassin)
       2. [Barbarian](#barbarian)
@@ -20,7 +20,7 @@
       12. [Thief](#thief)
       13. [Warlock](#warlock)
       14. [Wizard](#wizard)
-  - [`Ability` Score Bonuses](#ability-score-bonuses)
+  - [`Attribute` Score Bonuses](#attribute-score-bonuses)
     - [`Race`](#race)
       1. [Human](#human)
       2. [Elf](#elf)
@@ -80,7 +80,7 @@ Allow the user to rank the priority of the `Attributes`.  When a user selects a
 The `Class` `Attribute` priorities should be user modifiable after selecting a
 `Class`.
 
-The user chosen `Race` should support adding a bonus to `Ability` score(s).
+The user chosen `Race` should support adding a bonus to `Attribute` score(s).
 
 #### Future Requirements
 
@@ -90,12 +90,13 @@ Automatically calculate and add a bonus to the rolls based on
 - `Background`
 - `Culture`
 
-Enable a manual `Bonus` field for adding in a desired bonus.
+Enable a user-configurable `bonus` field for adding bonuses to the `Attribute`
+scores.
 
 - The bonus will be applied to all rolls.
 - The bonus adds to any `Racial`, `Background`, or `Culture` bonuses.
 
-### Ability Score Priorities
+### Attribute Score Priorities
 
 1. First
 2. Second
@@ -189,13 +190,13 @@ Enable a manual `Bonus` field for adding in a desired bonus.
 3. `Constitution`
 
 
-### `Ability` Score Bonuses
+### `Attribute` Score Bonuses
 
 #### `Race`
 
 ##### Human
 
-+1 All `Ability` scores
++1 All `Attribute` scores
 
 ##### Elf
 
@@ -235,8 +236,8 @@ Enable a manual `Bonus` field for adding in a desired bonus.
 
 ##### Miscellaneous
 
-- `Background` `Ability` Score Bonuses: None (yet)
-- `Culture` `Ability` Score Bonuses: None (yet)
+- `Background` `Attribute` Score Bonuses: None (yet)
+- `Culture` `Attribute` Score Bonuses: None (yet)
 
 ## Getting Started
 
