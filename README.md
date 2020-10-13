@@ -37,8 +37,13 @@ Generate `NPC` characters with optimal attributes based on `Class` (and `Race`?)
 ### Input Needs
 
 Allow the user to rank the priority of the attributes.
-Selecting a `Class` clears then selects based on class but can be edited after class is selected.
-Race may give a bonus to an ability score.
+When a user selects a `Class`, the current attribute assignments should
+clear/reset. The attributes should update to reflect the new
+`Class` configuration priorities.
+The user should be able to edit the `Class` attribute priorities
+after a `Class` is selected.
+
+The user chosen `Race` should support adding a bonus to ability score(s).
 
 #### Future Requirements
 
@@ -46,34 +51,81 @@ Not needed now but may need in future.
 
 Automatically calculate and add a bonus to the rolls based on
 
-- Race
-- Background
-- Culture
+- `Race`
+- `Background`
+- `Culture`
 
 Enable a manual `Bonus` field for adding in a desired bonus. The bonus 
 will be applied to all rolls.
 The bonus adds to any Racial, Background, or Culture bonuses.
 
-### Class
+### Ability Score Priorities
 
-- **Ability** Score Priority (First, Second, Third).
-  All other roll results should be assigned randomly to the remaining attributes.
-- **Assassin**: Dexterity, Melee, Charisma
-- **Barbarian**: Strength, Constitution, Wisdom
-- **Bard**: Charisma, Dexterity, Intelligence
-- **Cleric**: Wisdom, Constitution, Strength
-- **Druid**: Wisdom, Constitution, Charisma
-- **Fighter**: Melee, Strength, Constitution
-- **Monk**: Dexterity, Wisdom, Melee
-- **Paladin**: Strength, Charisma, Melee
-- **Ranger**: Ranged, Dexterity, Wisdom
-- **Shaman**: Wisdom, Intelligence, Melee
-- **Sorcerer**: Charisma, Constitution, Ranged
-- **Thief**: Dexterity, Intelligence, Charisma
-- **Warlock**: Charisma, Wisdom, Constitution
-- **Wizard**: Intelligence, Wisdom, Constitution
+1. First
+2. Second
+3. Third
+4. All other roll results are assigned randomly to the remaining attributes.
 
-### Race Ability Score Bonuses
+#### Class
+
+- **Assassin**:
+  1. Dexterity
+  2. Melee
+  3. Charisma
+- **Barbarian**:
+  1. Strength
+  2. Constitution
+  3. Wisdom
+- **Bard**:
+  1. Charisma
+  2. Dexterity
+  3. Intelligence
+- **Cleric**:
+  1. Wisdom
+  2. Constitution
+  3. Strength
+- **Druid**:
+  1. Wisdom
+  2. Constitution
+  3. Charisma
+- **Fighter**:
+  1. Melee
+  2. Strength
+  3. Constitution
+- **Monk**:
+  1. Dexterity
+  2. Wisdom
+  3. Melee
+- **Paladin**:
+  1. Strength
+  2. Charisma
+  3. Melee
+- **Ranger**:
+  1. Ranged
+  2. Dexterity
+  3. Wisdom
+- **Shaman**:
+  1. Wisdom
+  2. Intelligence
+  3. Melee
+- **Sorcerer**:
+  1. Charisma
+  2. Constitution
+  3. Ranged
+- **Thief**:
+  1. Dexterity
+  2. Intelligence
+  3. Charisma
+- **Warlock**:
+  1. Charisma
+  2. Wisdom
+  3. Constitution
+- **Wizard**:
+  1. Intelligence
+  2. Wisdom
+  3. Constitution
+
+#### Race Ability Score Bonuses
 
 - **Human**: +1 All ability scores
 - **Elf**: +2 Dexterity
@@ -85,6 +137,7 @@ The bonus adds to any Racial, Background, or Culture bonuses.
 - **Minotaur**: +2 Strength
 - **Satyr**: +2 Charisma
 - **Firbolg**: +2 Wisdom
+
 
 - Background Ability Score Bonuses: None (yet)
 - Culture Ability Score Bonuses: None (yet)
