@@ -57,17 +57,16 @@ The user chosen `Race` should support adding a bonus to `Ability` score(s).
 
 #### Future Requirements
 
-Not needed now but may need in future.
-
 Automatically calculate and add a bonus to the rolls based on
 
 - `Race`
 - `Background`
 - `Culture`
 
-Enable a manual `Bonus` field for adding in a desired bonus. The bonus 
-will be applied to all rolls.
-The bonus adds to any `Racial`, `Background`, or `Culture` bonuses.
+
+- Enable a manual `Bonus` field for adding in a desired bonus
+- The bonus will be applied to all rolls.
+- The bonus adds to any `Racial`, `Background`, or `Culture` bonuses.
 
 ### Ability Score Priorities
 
