@@ -34,8 +34,7 @@
       10. [Firbolg](#firbolg)
       11. [Miscellaneous](#miscellaneous)
 - [Getting Started](#getting-started)
-  - [Build](#build)
-  - [Build + Watch](#build--watch)
+  - [Running](#running)
 
 # NPC Gen
 
@@ -241,17 +240,14 @@ scores.
 
 ## Getting Started
 
-This project uses `ReasonML` and `BuckleScript`.
+This project uses [`deno`](https://deno.land/manual@v1.4.6/introduction).
 
-### Build
+### Running
 
-```bash # for yarn yarn build
+To use this project, use:
 
-# for npm npm run build ```
-
-### Build + Watch
-
-```bash # for yarn yarn start
-
-# for npm npm run start ```
+```bash
+$ deno run src/roll.ts
+...
+```
 
