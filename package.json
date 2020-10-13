@@ -1,0 +1,23 @@
+{
+  "name": "npcgen",
+  "version": "0.0.1",
+  "description": "Generate `NPC` characters with optimal attributes based on `Class` (and Race)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acidDrain/npcgen.git"
+  },
+  "keywords": [
+    "dungeons and dragons",
+    "character sheet"
+  ],
+  "author": "James Grow",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/acidDrain/npcgen/issues"
+  },
+  "homepage": "https://github.com/acidDrain/npcgen#readme"
+}
