@@ -1,38 +1,63 @@
 # NPC Generator
 
 1. [Requirements](#requirements)
-2. [Attributes](#attributes)
-3. [Input Needs](#input-needs)
-4. [Class](#class)
-5. [Race Ability Score Bonuses](#race-ability-score-bonuses)
-6. [Getting Started](#getting-started)
+	1. [Attributes](#attributes)
+	2. [Input Needs](#input-needs)
+		1. [Future Requirements](#future-requirements)
+	3. [Class](#class)
+	4. [Race Ability Score Bonuses](#race-ability-score-bonuses)
+2. [Getting Started](#getting-started)
+	1. [Build](#build)
+	2. [Build + Watch](#build--watch)
 
 # NPC Gen
 
-Generate NPC characters with optimal attributes based on Class.
+Generate `NPC` characters with optimal attributes based on `Class` (and `Race`?).
 
 ## Requirements
 
-- roll 4D6, (10) ten times
-- drop lowest
-- randomly distribute the results (Should work with or without Class, Race, etc. as some NPCs or creatures have no class or race.) to the nine ability scores based on priority set by Class or manual selection- the highest scores assigned to the priority attributes and the remaining rolls assigned to vacant ability scores randomly
-- lowest roll result is ignored.
+- Roll `4D6`, (10) ten times
+- drop the lowest result
+- randomly distribute the results (Should work with or without `Class`, `Race`, etc. as some `NPC`s or creatures have no class or race.)
+  to the nine ability scores based on priority set by `Class` or manual selection
+  the highest scores assigned to the priority attributes and the remaining rolls assigned to vacant ability scores randomly
 
-## Attributes
+### Attributes
 
-Melee, Ranged, Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma, Luck
+- Melee
+- Ranged
+- Strength
+- Dexterity
+- Constitution
+- Intelligence
+- Wisdom
+- Charisma
+- Luck
 
-## Input Needs
+### Input Needs
 
-Allow priority to be chosen. Selecting a Class clears then selects based on class but can be edited after class is selected. Race may give a bonus to an ability score.
+Allow the user to rank the priority of the attributes.
+Selecting a `Class` clears then selects based on class but can be edited after class is selected.
+Race may give a bonus to an ability score.
 
-*Not Needed Atm but may need in future* Race, Background and/or Culture will set a bonus which automatically adds to the roll.
+#### Future Requirements
 
-A manual Bonus Field for adding in a desired bonus which is applied to all rolls and stacks with possible Racial, Background and Culture bonuses.
+Not needed now but may need in future.
 
-## Class
+Automatically calculate and add a bonus to the rolls based on
 
-- **Ability** Score Priority (First, Second, Third). Rest Randomized.
+- Race
+- Background
+- Culture
+
+Enable a manual `Bonus` field for adding in a desired bonus. The bonus 
+will be applied to all rolls.
+The bonus adds to any Racial, Background, or Culture bonuses.
+
+### Class
+
+- **Ability** Score Priority (First, Second, Third).
+  All other roll results should be assigned randomly to the remaining attributes.
 - **Assassin**: Dexterity, Melee, Charisma
 - **Barbarian**: Strength, Constitution, Wisdom
 - **Bard**: Charisma, Dexterity, Intelligence
@@ -48,7 +73,7 @@ A manual Bonus Field for adding in a desired bonus which is applied to all rolls
 - **Warlock**: Charisma, Wisdom, Constitution
 - **Wizard**: Intelligence, Wisdom, Constitution
 
-## Race Ability Score Bonuses
+### Race Ability Score Bonuses
 
 - **Human**: +1 All ability scores
 - **Elf**: +2 Dexterity
@@ -61,14 +86,14 @@ A manual Bonus Field for adding in a desired bonus which is applied to all rolls
 - **Satyr**: +2 Charisma
 - **Firbolg**: +2 Wisdom
 
-- Background Ability Score Bonuses: None atm
-- Culture Ability Score Bonuses: None atm
+- Background Ability Score Bonuses: None (yet)
+- Culture Ability Score Bonuses: None (yet)
 
 ## Getting Started
 
-Hello! This project allows you to quickly get started with Reason and BuckleScript. If you wanted a more sophisticated version, try the `react` template (`bsb -theme react -init .`).
+Hello! This project allows you to quickly get started with Reason and BuckleScript.
 
-# Build
+### Build
 
 ```bash
 # for yarn
@@ -78,7 +103,7 @@ yarn build
 npm run build
 ```
 
-# Build + Watch
+### Build + Watch
 
 ```bash
 # for yarn
