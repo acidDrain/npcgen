@@ -1,40 +1,42 @@
 # NPC Generator
 
 - [Requirements](#requirements)
-  - [Attributes](#attributes)
-  - [Input Needs](#input-needs)
-    - [Future Requirements](#future-requirements)
-  - [`Attribute` Score Priorities](#attribute-score-priorities)
-    - [`Class`](#class)
-      1. [Assassin](#assassin)
-      2. [Barbarian](#barbarian)
-      3. [Bard](#bard)
-      4. [Cleric](#cleric)
-      5. [Druid](#druid)
-      6. [Fighter](#fighter)
-      7. [Monk](#monk)
-      8. [Paladin](#paladin)
-      9. [Ranger](#ranger)
-      10. [Shaman](#shaman)
-      11. [Sorcerer](#sorcerer)
-      12. [Thief](#thief)
-      13. [Warlock](#warlock)
-      14. [Wizard](#wizard)
-  - [`Attribute` Score Bonuses](#attribute-score-bonuses)
-    - [`Race`](#race)
-      1. [Human](#human)
-      2. [Elf](#elf)
-      3. [Dwarf](#dwarf)
-      4. [Gnome](#gnome)
-      5. [Halfling](#halfling)
-      6. [Orc](#orc)
-      7. [Goblin](#goblin)
-      8. [Minotaur](#minotaur)
-      9. [Satyr](#satyr)
-      10. [Firbolg](#firbolg)
-      11. [Miscellaneous](#miscellaneous)
+	- [Generating `Ability Scores`](#generating-ability-scores)
+	- [Assigning Scores](#assigning-scores)
+	- [Ability Scores](#ability-scores)
+	- [Input Needs](#input-needs)
+		- [Future Requirements](#future-requirements)
+	- [Ability Score Priorities](#ability-score-priorities)
+		- [`Class`](#class)
+			- [Assassin](#assassin)
+			- [Barbarian](#barbarian)
+			- [Bard](#bard)
+			- [Cleric](#cleric)
+			- [Druid](#druid)
+			- [Fighter](#fighter)
+			- [Monk](#monk)
+			- [Paladin](#paladin)
+			- [Ranger](#ranger)
+			- [Shaman](#shaman)
+			- [Sorcerer](#sorcerer)
+			- [Thief](#thief)
+			- [Warlock](#warlock)
+			- [Wizard](#wizard)
+	- [`Ability` Score Bonuses](#ability-score-bonuses)
+		- [`Race`](#race)
+			- [Human](#human)
+			- [Elf](#elf)
+			- [Dwarf](#dwarf)
+			- [Gnome](#gnome)
+			- [Halfling](#halfling)
+			- [Orc](#orc)
+			- [Goblin](#goblin)
+			- [Minotaur](#minotaur)
+			- [Satyr](#satyr)
+			- [Firbolg](#firbolg)
+			- [Miscellaneous](#miscellaneous)
 - [Getting Started](#getting-started)
-  - [Running](#running)
+	- [Usage](#usage)
 
 # NPC Gen
 
@@ -43,22 +45,34 @@ Generate `NPC` characters with optimal attributes based on `Class` (and
 
 ## Requirements
 
-Emulate rolling (4) six-sided die by generating 10 random numbers (between 4
-and 24).
+We need to generate (9) `Ability Scores` for our character. In the physical world, we
+roll dice. Here, we'll mimick that process by generating random numbers.
 
-Next,
+To generate these `Ability Scores` for our character, we will perform the
+following steps for each `Ability Score`.
 
-- drop the lowest result
-- assign the resulting scores to `Attributes` according to `Class` priorities
+### Generating `Ability Scores`
+
+To generate an `Ability Score`, follow these steps:
+
+1. generate four random numbers between 1 and 6
+2. drop a single result that is the lowest
+3. add the three remaining values
+
+Once we have generated (9) `Ability Scores`, we can begin assigning them.
+
+### Assigning Scores
+
+- assign the resulting scores to `Ability Scores` according to `Class` priorities
   or custom user configuration, with highest scores assigned to lower priority
   (e.g. scores: 24, 11 -> Priority 1 = 24, Priority 2 = 11)
-- Since there are (9) `Attributes` to assign, if there are less than (9)
-  `Attributes` configured with a priority, after assigning highest scores based
-  on priorities, randomly assign the remaining scores to `Attributes` missing a
+- Since there are (9) `Ability Scores` to assign, if there are less than (9)
+  `Ability Scores` configured with a priority, after assigning highest scores based
+  on priorities, randomly assign the remaining scores to `Ability Scores` missing a
   configured priority
 - support `undefined` `Class`, `Race`. Some `NPC`s have no `Class` or `Race`
 
-### Attributes
+### Ability Scores
 
 - `Melee`
 - `Ranged`
@@ -72,14 +86,14 @@ Next,
 
 ### Input Needs
 
-Allow the user to rank the priority of the `Attributes`.  When a user selects a
-`Class`, the current `Attribute` assignments should clear/reset. The
-`Attribute`s should update to reflect the new `Class` priority configuration.
+Allow the user to rank the priority of the `Ability Scores`. When a user selects a
+`Class`, the current `Ability` assignments should clear/reset. The
+`Ability`s should update to reflect the new `Class` priority configuration.
 
-The `Class` `Attribute` priorities should be user modifiable after selecting a
+The `Class` `Ability` priorities should be user modifiable after selecting a
 `Class`.
 
-The user chosen `Race` should support adding a bonus to `Attribute` score(s).
+The user chosen `Race` should support adding a bonus to `Ability` score(s).
 
 #### Future Requirements
 
@@ -89,18 +103,18 @@ Automatically calculate and add a bonus to the rolls based on
 - `Background`
 - `Culture`
 
-Enable a user-configurable `bonus` field for adding bonuses to the `Attribute`
+Support a user-configurable `bonus` field for adding bonuses to the `Ability`
 scores.
 
 - The bonus will be applied to all rolls.
 - The bonus adds to any `Racial`, `Background`, or `Culture` bonuses.
 
-### Attribute Score Priorities
+### Ability Score Priorities
 
 1. First
 2. Second
 3. Third
-4. All other roll results are assigned randomly to the remaining `Attribute`s.
+4. All other roll results are assigned randomly to the remaining `Ability`s.
 
 #### `Class`
 
@@ -189,13 +203,13 @@ scores.
 3. `Constitution`
 
 
-### `Attribute` Score Bonuses
+### `Ability` Score Bonuses
 
 #### `Race`
 
 ##### Human
 
-+1 All `Attribute` scores
++1 All `Ability` scores
 
 ##### Elf
 
@@ -235,14 +249,14 @@ scores.
 
 ##### Miscellaneous
 
-- `Background` `Attribute` Score Bonuses: None (yet)
-- `Culture` `Attribute` Score Bonuses: None (yet)
+- `Background` `Ability` Score Bonuses: None (yet)
+- `Culture` `Ability` Score Bonuses: None (yet)
 
 ## Getting Started
 
 This project uses [`deno`](https://deno.land/manual@v1.4.6/introduction).
 
-### Running
+### Usage
 
 To use this project, use:
 
