@@ -1,42 +1,42 @@
 # NPC Generator
 
 - [Requirements](#requirements)
-	- [Generating `Ability Scores`](#generating-ability-scores)
-	- [Assigning Scores](#assigning-scores)
-	- [Ability Scores](#ability-scores)
-	- [Input Needs](#input-needs)
-		- [Future Requirements](#future-requirements)
-	- [Ability Score Priorities](#ability-score-priorities)
-		- [`Class`](#class)
-			- [Assassin](#assassin)
-			- [Barbarian](#barbarian)
-			- [Bard](#bard)
-			- [Cleric](#cleric)
-			- [Druid](#druid)
-			- [Fighter](#fighter)
-			- [Monk](#monk)
-			- [Paladin](#paladin)
-			- [Ranger](#ranger)
-			- [Shaman](#shaman)
-			- [Sorcerer](#sorcerer)
-			- [Thief](#thief)
-			- [Warlock](#warlock)
-			- [Wizard](#wizard)
-	- [`Ability` Score Bonuses](#ability-score-bonuses)
-		- [`Race`](#race)
-			- [Human](#human)
-			- [Elf](#elf)
-			- [Dwarf](#dwarf)
-			- [Gnome](#gnome)
-			- [Halfling](#halfling)
-			- [Orc](#orc)
-			- [Goblin](#goblin)
-			- [Minotaur](#minotaur)
-			- [Satyr](#satyr)
-			- [Firbolg](#firbolg)
-			- [Miscellaneous](#miscellaneous)
+  - [Generating `Ability Scores`](#generating-ability-scores)
+  - [Assigning Scores](#assigning-scores)
+  - [Ability Scores](#ability-scores)
+  - [Input Needs](#input-needs)
+    - [Future Requirements](#future-requirements)
+  - [Ability Score Priorities](#ability-score-priorities)
+    - [`Class`](#class)
+      - [Assassin](#assassin)
+      - [Barbarian](#barbarian)
+      - [Bard](#bard)
+      - [Cleric](#cleric)
+      - [Druid](#druid)
+      - [Fighter](#fighter)
+      - [Monk](#monk)
+      - [Paladin](#paladin)
+      - [Ranger](#ranger)
+      - [Shaman](#shaman)
+      - [Sorcerer](#sorcerer)
+      - [Thief](#thief)
+      - [Warlock](#warlock)
+      - [Wizard](#wizard)
+  - [`Ability` Score Bonuses](#ability-score-bonuses)
+    - [`Race`](#race)
+      - [Human](#human)
+      - [Elf](#elf)
+      - [Dwarf](#dwarf)
+      - [Gnome](#gnome)
+      - [Halfling](#halfling)
+      - [Orc](#orc)
+      - [Goblin](#goblin)
+      - [Minotaur](#minotaur)
+      - [Satyr](#satyr)
+      - [Firbolg](#firbolg)
+      - [Miscellaneous](#miscellaneous)
 - [Getting Started](#getting-started)
-	- [Usage](#usage)
+  - [Usage](#usage)
 
 # NPC Gen
 
@@ -45,8 +45,9 @@ Generate `NPC` characters with optimal attributes based on `Class` (and
 
 ## Requirements
 
-We need to generate (9) `Ability Scores` for our character. In the physical world, we
-roll dice. Here, we'll mimick that process by generating random numbers.
+We need to generate (9) `Ability Scores` for our character. In the physical
+world, we roll dice. Here, we'll mimick that process by generating random
+numbers.
 
 To generate these `Ability Scores` for our character, we will perform the
 following steps for each `Ability Score`.
@@ -63,13 +64,13 @@ Once we have generated (9) `Ability Scores`, we can begin assigning them.
 
 ### Assigning Scores
 
-- assign the resulting scores to `Ability Scores` according to `Class` priorities
-  or custom user configuration, with highest scores assigned to lower priority
-  (e.g. scores: 24, 11 -> Priority 1 = 24, Priority 2 = 11)
+- assign the resulting scores to `Ability Scores` according to `Class`
+  priorities or custom user configuration, with highest scores assigned to
+  lower priority (e.g. scores: 24, 11 -> Priority 1 = 24, Priority 2 = 11)
 - Since there are (9) `Ability Scores` to assign, if there are less than (9)
-  `Ability Scores` configured with a priority, after assigning highest scores based
-  on priorities, randomly assign the remaining scores to `Ability Scores` missing a
-  configured priority
+  `Ability Scores` configured with a priority, after assigning highest scores
+  based on priorities, randomly assign the remaining scores to `Ability Scores`
+  missing a configured priority
 - support `undefined` `Class`, `Race`. Some `NPC`s have no `Class` or `Race`
 
 ### Ability Scores
@@ -86,8 +87,8 @@ Once we have generated (9) `Ability Scores`, we can begin assigning them.
 
 ### Input Needs
 
-Allow the user to rank the priority of the `Ability Scores`. When a user selects a
-`Class`, the current `Ability` assignments should clear/reset. The
+Allow the user to rank the priority of the `Ability Scores`. When a user
+selects a `Class`, the current `Ability` assignments should clear/reset. The
 `Ability`s should update to reflect the new `Class` priority configuration.
 
 The `Class` `Ability` priorities should be user modifiable after selecting a
@@ -260,8 +261,5 @@ This project uses [`deno`](https://deno.land/manual@v1.4.6/introduction).
 
 To use this project, use:
 
-```bash
-$ deno run src/roll.ts
-...
-```
+```bash $ deno run src/roll.ts ...  ```
 
