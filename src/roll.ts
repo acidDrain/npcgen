@@ -6,12 +6,18 @@ interface _GenerateTen {
 }
 
 const roll10 = (rollFunction: Function): Array<number> => {
-  const _generateTen = ({ gList = [],  gCount = 0 }: _GenerateTen): Array<number> => {
-    if (gCount < 10) return  _generateTen({ gList: [...gList, rollFunction()], gCount: (gCount + 1) })
+  const _generateTen = ({
+    gList = [],
+    gCount = 0,
+  }: _GenerateTen): Array<number> => {
+    if (gCount < 10)
+      return _generateTen({
+        gList: [...gList, rollFunction()],
+        gCount: gCount + 1,
+      });
     return gList;
-  }
-  return _generateTen({}); 
-}
+  };
+  return _generateTen({});
+};
 
 export { roll10, rollD6 };
-
